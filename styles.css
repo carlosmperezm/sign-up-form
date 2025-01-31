@@ -26,19 +26,18 @@ a {
 
 /* General */
 body {
-    background-color: var(--secondary-color);
     height: 100vh;
 }
 
 main {
     display: flex;
+    height: 100%;
 }
 
 .left-panel {
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    height: 100vh;
+    width: calc(max(1000px, 50vw));
     position: relative;
     background-image: url("assets/cabinets.jpg");
     background-size: cover;
@@ -56,4 +55,71 @@ main {
     color: White;
     text-decoration-line: underline;
 
+}
+
+/* Right Panel */
+.right-panel {
+    width: 100%;
+}
+
+form {
+    background-color: Red;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+}
+
+form section {
+    flex: 1 0 30%;
+
+}
+
+.form-header {
+    background-color: var(--secondary-color);
+}
+
+.form-inputs {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.inputs-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 80%;
+    border: 1px solid
+}
+
+.inputs-container p {
+    display: flex;
+    border: 1px solid Red;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.inputs-container p label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 5px;
+}
+
+
+.form-buttons {
+    background-color: var(--secondary-color);
 }
