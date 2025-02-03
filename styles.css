@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Norse';
-    src: url('./assets/Norse-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 :root {
-    --primary-color: #f0ead2;
+    --primary-color: #edede9;
     --secondary-color: #a98467;
     --third-color: #dde5b6;
     --fourth-color: #6c584c;
@@ -35,11 +28,9 @@ a {
 }
 
 /* General */
-
-
 body {
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -94,9 +85,9 @@ form section {
 }
 
 .form-header {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 2rem;
-    color: White;
+    /* color: White; */
 }
 
 .form-header h1 {
@@ -120,7 +111,7 @@ form section {
 }
 
 .form-inputs {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -158,7 +149,7 @@ h2 {
 
 
 .form-buttons {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,8 +167,14 @@ h2 {
 }
 
 input {
+    appearance: none;
     border-radius: 5px;
-    border: 2px solid Gray;
+    border: 1px solid Gray;
+
+}
+
+input:focus {
+    box-shadow: 1px 1px Gray;
 }
 
 input:invalid {
